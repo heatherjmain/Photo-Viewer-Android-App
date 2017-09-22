@@ -13,9 +13,9 @@ public class PhotoAlbum {
     public PhotoAlbum() {
         album = new ArrayList<Photo>();
 
-    album.add(new Photo(1, "../res/drawable/lighthouse"));
-    album.add(new Photo(2, "@drawable/sunset"));
-    album.add(new Photo(3, "@drawable/water1"));
+    album.add(new Photo(1, R.drawable.sunset));
+    album.add(new Photo(2, R.drawable.lighthouse));
+    album.add(new Photo(3, R.drawable.harbour));
     }
 
     public ArrayList<Photo> getAlbum() {

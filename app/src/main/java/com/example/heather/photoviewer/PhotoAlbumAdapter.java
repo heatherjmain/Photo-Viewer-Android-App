@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -35,8 +36,11 @@ public class PhotoAlbumAdapter extends ArrayAdapter<Photo> {
         TextView ranking = listItemView.findViewById(R.id.ranking);
         ranking.setText(currentPhoto.getRanking().toString());
 
-        TextView url = listItemView.findViewById(R.id.url);
-        url.setText(currentPhoto.getUrl());
+        ImageView url = listItemView.findViewById(R.id.url);
+//        url.setImageResource(R.drawable.sunset);
+        url.setImageResource(currentPhoto.getUrl());
+
+
 
         listItemView.setTag(currentPhoto);
 

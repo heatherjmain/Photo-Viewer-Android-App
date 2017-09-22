@@ -29,7 +29,7 @@ public class PhotoAlbumActivity extends AppCompatActivity {
 
     public void getPhoto(View listItem) {
         Photo photo = (Photo) listItem.getTag();
-        Log.d("Photo: " , photo.getUrl());
+//        Log.d("Photo: " , photo.getUrl());
     }
 
 }

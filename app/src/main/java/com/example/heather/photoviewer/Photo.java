@@ -6,9 +6,9 @@ package com.example.heather.photoviewer;
 
 public class Photo {
     private int ranking;
-    private String url;
+    private int url;
 
-    public Photo(int ranking, String url) {
+    public Photo(int ranking, int url) {
         this.ranking = ranking;
         this.url = url;
     }
@@ -17,7 +17,7 @@ public class Photo {
         return ranking;
     }
 
-    public String getUrl() {
+    public int getUrl() {
         return url;
     }
 
